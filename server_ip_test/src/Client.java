@@ -13,7 +13,7 @@ public class Client {
     public Client() {
 
         try {
-            socket = new Socket("localhost", 3000);
+            socket = new Socket("127.0.0.1", 3000);
             //questa parte è normale API di Java, prendere e copiare
             inSocket = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             outSocket = new PrintWriter(new BufferedWriter(
